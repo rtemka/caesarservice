@@ -22,6 +22,8 @@ func main() {
 		ReadHeaderTimeout: time.Minute,
 	}
 
+	logger.Printf("start listening on localhost%s", srv.Addr)
+
 	if err := srv.ListenAndServe(); err != http.ErrServerClosed {
 		log.Fatal(err)
 	}
