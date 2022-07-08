@@ -6,6 +6,11 @@
 
 #### Запуск сервера
 
+```bash
+git clone https://github.com/rtemka/cypherservice.git
+cd ./cypherservice
+```
+
 ##### **Docker**
 
 ```bash
@@ -18,7 +23,7 @@ docker run -it --rm -p 8080:8080 --name cypherservice cypherservice
 ```bash
 go install ./cmd/service/service.go
 service
-# start listening on localhost:8080
+# start listening on localhost:8080...
 ```
 
 #### **Шифрование**
